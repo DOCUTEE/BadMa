@@ -12,9 +12,11 @@
 <html>
 <head>
     <title>Kết quả điểm danh</title>
+
 </head>
 <body>
-<div>Điểm danh tuần <%= request.getAttribute("weekNeed") %></div>
+
+<div>Điểm danh tuần <%= request.getAttribute("weekNeed") %> lớp cầu lông sáng thứ 5 tiết 1-2</div>
 <%--<% List<Report>reportList = (List<Report>) request.getAttribute("reportList");%>--%>
 <c:forEach var="report" items="${reportList}">
     <h3>Nhóm: ${report.groupId}</h3>
@@ -22,5 +24,6 @@
         <div>${record.studentId} | ${record.studentName} | ${record.reason} </div>
     </c:forEach>
 </c:forEach>
+<a href="${pageContext.request.contextPath}/"> quay trở lại</a>
 </body>
 </html>

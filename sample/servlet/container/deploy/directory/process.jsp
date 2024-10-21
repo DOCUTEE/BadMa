@@ -11,6 +11,6 @@
     <title>Xử lý kết quả</title>
 </head>
 <body>
-
+    <div>Đang xử lý...</div>
 </body>
 </html>

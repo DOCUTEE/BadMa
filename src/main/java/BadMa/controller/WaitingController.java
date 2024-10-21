@@ -4,6 +4,7 @@ import BadMa.Model.BadmintonClass;
 import BadMa.Model.Group;
 import BadMa.Model.Report;
 import BadMa.Model.Student;
+import jakarta.servlet.http.Cookie;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -67,6 +68,7 @@ public class WaitingController extends HttpServlet {
 //        request.setAttribute("BadmintonClass", badClass);
 //        request.getRequestDispatcher("process.jsp").forward(request, response);
         List<Report>reportList = badClass.getGroupsReport(weekNeed);
+//        Cookie[] cookies = request.getCookies();
         request.setAttribute("reportList", reportList);
         request.setAttribute("weekNeed", weekNeed);
         request.getRequestDispatcher("result.jsp").forward(request, response);

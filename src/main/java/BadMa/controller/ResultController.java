@@ -12,7 +12,6 @@ import java.io.IOException;
 public class ResultController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int week = Integer.parseInt(request.getParameter("week"));
 
     }
 
